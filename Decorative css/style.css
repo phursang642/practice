@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    
+}
+
+
+
+.container{
+    max-width: 80%;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.main-section{
+    margin-bottom: 40px;
+}
+.main-section-title{
+    text-align: center;
+    color: #6677eeaa;
+    margin-bottom: 20px;
+
+}.example-row{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.example-box{
+    width: 200px;
+    height: 100px;
+    background-color: rgb(71, 97, 216);
+    border-radius: 15px;
+    text-align: center;
+    padding: 40px 50px
+
+}
+.shadow-basic{
+    box-shadow: 0px 10px 20px rgba(71, 97, 216);
+    
+}
+.shadow-blur{
+    box-shadow: 5px 10px 15px rgba(71, 97, 216);
+}
+.shadow-multiple{
+    box-shadow: 
+    0px 5px 10px rgba(71, 97, 216), 
+    0px 10px 20px rgba(27, 201, 56, 0.5), 
+    0px 25px 30px rgba(238, 42, 42, 0.5);
+}
+.shadow-basic-text{
+
+    text-shadow: 0px 10px 20px rgb(214, 20, 140);
+
+}
+.shadow-glow-text{
+    text-shadow:  0px 5px 10px rgba(71, 97, 216), 
+    0px 10px 20px rgba(27, 201, 56, 0.5), 
+    0px 25px 30px rgba(238, 42, 42, 0.5);
+}
+
+.border-radius{
+    border-radius: 0 55px 0 55px;
+}
+.border-image{
+    border: 10px solid;
+
+    border-image: linear-gradient(45deg, #78f3d4, #af4261) 1;
+}
+
+.border-outline{
+    outline: 10px solid #78f3d4;
+    outline-offset: 10px;
+}
+.blur-filter{
+    filter: blur(5px);
+}
