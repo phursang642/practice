@@ -23,7 +23,7 @@ body{
 .main-section{
     margin-bottom: 40px;
 }
-.main-section-title{
+.main-section__title{
     text-align: center;
     color: #6677eeaa;
     margin-bottom: 20px;
@@ -136,4 +136,76 @@ body{
 .hover-3d:hover{
     transition: transform 1s ease;
     transform: perspective(50px) rotateY(20deg);
+}
+.transition-basic{
+    transition: 1s ease-in-out
+}
+.transition-basic:hover{
+    background: linear-gradient(45deg, #ff6b6b, #65d6f0);
+    transform: scale(1.5);
+}
+.transition-delay{
+    transition: all 2s ease-in-out;
+}
+.transition-delay:hover{
+    background: linear-gradient(45deg, #ff6b6b, #65d6f0);
+    transform: translateX(20px);
+}
+.transition-timing{
+    transition: all 2s ease-in-out;
+    
+}
+.transition-timing:hover{
+    background: linear-gradient(45deg, #ff6b6b, #65d6f0);
+    transform: rotate(20deg);
+}
+.animation-bounce{
+    animation: bounce 2s infinite;
+}
+@keyframes bounce{
+    0%, 100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.animation-pulse{
+    animation: pulse 2s infinite;
+}
+@keyframes pulse{
+    0%, 100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+}
+.animation-spin{
+    animation: spin 2s linear infinite;
+}
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.opacity-animation{
+    animation: opacity 3s ease-in-out;
+}
+.opacity-animation:hover{
+    opacity: 0.5;
+    transform: translateY(-20px);
+}
+.color-transition{
+    animation: colorChange 3s ease-in-out;
+}
+.color-transition:hover{
+    color:#ff6b6b
+    background: linear-gradient(45deg, #ff6b6b, #65d6f0);
 }
